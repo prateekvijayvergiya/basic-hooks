@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
+import UseState from './useState'
+import UseEffect from './useEffect'
+import UseMemo from './useMemo'
+import NameProvider from './nameProvider'
+import UseContext from './useContext'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fragment>
+        {/* <UseState/> */}
+        {/* <UseEffect/> */}
+        {/* <UseMemo/> */}
+        <NameProvider>
+          <UseContext/>
+        </NameProvider>
+      </Fragment>
     </div>
   );
 }
