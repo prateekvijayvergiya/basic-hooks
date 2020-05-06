@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <Fragment>
-        {/* <UseState/> */}
-        {/* <UseEffect/> */}
-        {/* <UseMemo/> */}
+         <UseState/> 
+         <UseEffect/> 
+         <UseMemo/>
         <NameProvider>
           <UseContext/>
         </NameProvider>
